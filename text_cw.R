@@ -1,0 +1,27 @@
+# Crosswalk needed to replace text for multiple response answers
+# Cannot parse on the comma currently because of these responses
+# Date: 2017_12_19
+# Author: Tim Essam, Ph.D. - GeoCenter
+
+cw_text <- tibble::tribble(
+                       ~lookupVar,                                                                                                                                                        ~lookupText,                                                       ~newText,
+                "mchn_subsectors",                                                                                                                                     "Water, Sanitation and Hygiene",                                     "Water/Sanitation/Hygiene",
+            "mchn_activities_cft",                                                                 "Support for local production of specialized nutrition foods \\(i.e. fortified flours, pastes, etc.\\)",  "Support for local production of specialized nutrition foods",
+            "mchn_activities_sbc",                                                                                                            "Peer Support Groups \\(mothers, mens, grandmothers, etc\\)",                                          "Peer Support Groups",
+         "mchn_activities_health",                                                                                                           "Support to Management, Supervision, and/or Coordination",        "Support to management/supervision and/or coordination",
+                 "hiv_subsectors",                                                                                                           "Direct Supplementary or Therapeutic Feeding, Safety Net",       "Direct Supplementary or Therapeutic Feeding Safety Net",
+   "mkts_activities_input_access",                                                                                  "Facilitating Market Linkages, e.g. trade shows/intro to buyers/other sales leads",                                  "Facilitating Market Linkags",
+   "mkts_activities_input_access",                                                                                                              "Product development, including development of brands",                                          "Product development",
+         "mkts_activities_credit",  "Provided through collaboration with another source, e.g. NGO specialized in credit; microfinance institution, non-bank financial institution, or commercial bank",           "Provided through collaboration with another source",
+         "mkts_activities_credit",                                                                                                "Community-based revolving credit activities, both cash and in-kind",                  "Community-based revolving credit activities",
+         "mkts_activities_credit",                         "Village banking and other community-based savings groups; use of social fund, loan funds or accumulated savings and dividend at share-out",     "Village banking and other community-based savings groups",
+             "wash_activities_om",                                                          "External-led O&M for drinking water \\(e.g. public private partnership, PPP, affermage, or government MOU\\)",                          "External-led O&M for drinking water",
+          "wash_activities_sanit",                                                                                            "Facilitative approach \\(e.g. CLTS, PHAST\\) to increase sanitation access",           "Facilitative approach to increase sanitation access",
+          "wash_activities_sanit",                                                                                      "Institutional sanitation access \\(e.g. latrines at schools, clinics, markets\\)",                              "Institutional sanitation access",
+        "wash_activities_hygiene",                                                                     "Provision of household or point-of-use water treatments \\(e.g. Aquatabs, filters, Pur sachets\\)",      "Provision of household or point-of-use water treatments",
+               "youth_subsectors",                                                                  "Intentional inclusion of youth in agriculture, livestock, livelihood, and value chain activities",                "Intentional inclusion of youth in agriculture",
+        "assets_infra_activities",                                                          "Agricultural Structures \\(e.g. water retention structures, irrigation sytems, post-processing facilities\\)",                                      "Agricultural Structures",
+        "assets_infra_activities",                                                                     "Water & Sanitation Structures \\(e.g. drinking water points or systems, institutional latrines\\)",                                "Water & Sanitation Structures",
+      "aglivhood_activities_crop",                                                                                                                                     "Implements \\(plows, hoes, etc\\)",                                                   "Ag implements",
+             "wash_activities_dw",                                                                             "Community-level drinking water treatment \\(e.g. chlorination systems, sand filtration\\)",                     "Community-level drinking water treatment"
+  )
